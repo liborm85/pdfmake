@@ -74,10 +74,10 @@
  // open the PDF in a new window
  pdfMake.createPdf(docDefinition).open();
 
- // print the PDF (temporarily Chrome-only)
+ // print the PDF
  pdfMake.createPdf(docDefinition).print();
 
- // download the PDF (temporarily Chrome-only)
+ // download the PDF
  pdfMake.createPdf(docDefinition).download('optionalName.pdf');</pre>
 
 	<h2>Styling</h2>
@@ -486,14 +486,20 @@ var docDefinition = {
 
 	<h1>License</h1>
 	MIT
+  
+  <h1>Authors</h1>
+  <ul>
+    <li><a href="https://github.com/bpampuch">@bpampuch</a> (founder)</li>
+    <li><a href="https://github.com/liborm85">@liborm85</a></li>
+  </ul>
+  
+  <p>
+  pdfmake is based on a truly amazing library <a href="https://github.com/devongovett/pdfkit">pdfkit</a> (credits to <a href="https://github.com/devongovett">@devongovett</a>).
+  </p>
 
-	<hr/>
-	<p>
-	pdfmake is based on a truly amazing library pdfkit.org - credits to @devongovett
-	</p>
-	<p>
-	big thanks to @yelouafi for making this library even better
-	</p>
+  <p>
+  Thanks to all contributors.
+  </p>
 </div>
 <script type="text/javascript" charset="utf-8">
 	$('.code').each(function(i, e) { hljs.highlightBlock(e); });
